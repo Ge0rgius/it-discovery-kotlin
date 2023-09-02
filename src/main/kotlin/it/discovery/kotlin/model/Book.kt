@@ -1,7 +1,5 @@
 package it.discovery.kotlin.model
 
-import it.discovery.model.BookState
-import it.discovery.model.Genre
 import java.time.LocalDateTime
 import java.util.*
 
@@ -29,5 +27,12 @@ data class Book(
             else -> "Available amount: $amount"
         }
     }
+
+    companion object BookFactory {
+        fun createBook(bookState: BookState): Book {
+            return Book(bookState = bookState)
+        }
+    }
+
 
 }

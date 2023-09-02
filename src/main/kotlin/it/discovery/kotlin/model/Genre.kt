@@ -3,7 +3,7 @@ package it.discovery.kotlin.model
 import java.time.LocalDateTime
 
 data class Genre(
-    private val name: String, private
+    public val name: String, private
     val created: LocalDateTime
 ) {
     override fun equals(other: Any?): Boolean {

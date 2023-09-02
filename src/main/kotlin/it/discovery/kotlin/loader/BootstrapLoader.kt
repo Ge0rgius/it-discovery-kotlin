@@ -8,10 +8,10 @@ import java.time.LocalDateTime
 
 fun main(args: Array<String>) {
     val service = MainBookService(XMLBookRepository("books.xml"))
-    val book = BookFactory.createBook(it.discovery.model.BookState.PRESENT)
-    book.setName("Introduction into Kotlin")
-    book.setPages(100)
-    book.setYear(2021)
+    val book = Book.createBook(BookState.PRESENT)
+//    book.setName("Introduction into Kotlin")
+//    book.setPages(100)
+//    book.setYear(2021)
 
     val genre = Genre("IT", LocalDateTime.now())
     //book.setGenre(genre)
@@ -21,6 +21,6 @@ fun main(args: Array<String>) {
     val books = service.findBooks()
     println(books)
 
-    val book1 = service.findBookById(book.getId()).orElseThrow()
+    val book1 = service.findBookById(book.id).orElseThrow()
     println(book1)
 }

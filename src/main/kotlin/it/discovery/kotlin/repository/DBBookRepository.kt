@@ -3,7 +3,7 @@ package it.discovery.kotlin.repository
 import it.discovery.kotlin.model.*
 import java.util.*
 
-class DBBookRepository : BookRepository {
+data object DBBookRepository : BookRepository {
     private val books: MutableMap<Int, Book> = HashMap()
 
     private var counter = 0

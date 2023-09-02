@@ -1,7 +1,7 @@
 package it.discovery.kotlin.service
 
+import it.discovery.kotlin.model.Book
 import it.discovery.kotlin.repository.BookRepository
-import it.discovery.model.Book
 
 class MainBookService(private val repository: BookRepository) {
 
