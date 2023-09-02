@@ -1,9 +1,9 @@
-package it.discovery.loader
+package it.discovery.kotlin.loader
 
 import it.discovery.model.BookFactory
 import it.discovery.model.BookState
 import it.discovery.model.Genre
-import it.discovery.service.MainBookService
+import it.discovery.kotlin.service.MainBookService
 import java.time.LocalDateTime
 
 fun main(args: Array<String>) {

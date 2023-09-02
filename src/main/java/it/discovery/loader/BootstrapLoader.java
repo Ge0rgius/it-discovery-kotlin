@@ -7,7 +7,7 @@ import it.discovery.model.Book;
 import it.discovery.model.BookFactory;
 import it.discovery.model.BookState;
 import it.discovery.model.Genre;
-import it.discovery.service.MainBookService;
+import it.discovery.kotlin.service.MainBookService;
 
 public class BootstrapLoader {
 
