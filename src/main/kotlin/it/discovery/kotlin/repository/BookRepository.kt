@@ -1,6 +1,6 @@
 package it.discovery.kotlin.repository
 
-import it.discovery.model.Book
+import it.discovery.kotlin.model.*
 import java.util.*
 
 sealed interface BookRepository {

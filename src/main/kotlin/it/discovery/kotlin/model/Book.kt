@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 import java.util.*
 
 data class Book(
-    private var id: Int = 0, private
+    var id: Int = 0, private
     val name: String? = null,
     private val year: Int = 0,
     private val pages: Int = 0,
