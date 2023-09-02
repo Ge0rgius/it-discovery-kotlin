@@ -1,10 +1,9 @@
 package it.discovery.kotlin.service
 
+import it.discovery.kotlin.repository.BookRepository
 import it.discovery.model.Book
-import it.discovery.repository.DBBookRepository
 
-class MainBookService {
-    private val repository = DBBookRepository()
+class MainBookService(private val repository: BookRepository) {
 
     init {
         println("Using db repository")

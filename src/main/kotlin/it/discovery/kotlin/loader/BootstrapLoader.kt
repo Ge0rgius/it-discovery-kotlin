@@ -1,5 +1,6 @@
 package it.discovery.kotlin.loader
 
+import it.discovery.kotlin.repository.XMLBookRepository
 import it.discovery.model.BookFactory
 import it.discovery.model.BookState
 import it.discovery.model.Genre
@@ -7,7 +8,7 @@ import it.discovery.kotlin.service.MainBookService
 import java.time.LocalDateTime
 
 fun main(args: Array<String>) {
-    val service = MainBookService()
+    val service = MainBookService(XMLBookRepository("books.xml"))
     val book = BookFactory.createBook(BookState.PRESENT)
     book.setName("Introduction into Kotlin")
     book.setPages(100)

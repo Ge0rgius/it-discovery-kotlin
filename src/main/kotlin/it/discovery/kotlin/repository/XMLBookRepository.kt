@@ -8,13 +8,7 @@ class XMLBookRepository(private val xmlFile: String) : BookRepository {
 
     private var counter = 0
 
-    fun init() {
-        println("Started XML repository with source file:$xmlFile")
-    }
-
-    fun destroy() {
-        println("Shutting down repository ... ")
-    }
+    fun init() = println("Started XML repository with source file:$xmlFile")
 
     override fun saveBook(book: Book) {
         if (book.id == 0) {
