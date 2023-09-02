@@ -13,8 +13,8 @@ import java.util.Optional;
  * @author morenets
  *
  */
-@Getter
-@Setter
+//@Getter
+//@Setter
 @ToString
 @EqualsAndHashCode(of = "id")
 public class Book {
@@ -65,5 +65,29 @@ public class Book {
 		}
 
 		return "Available amount: " + amount;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public void setPages(int pages) {
+		this.pages = pages;
+	}
+
+	public void setGenre(Genre genre) {
+		this.genre = genre;
+	}
+
+	public int getId() {
+		return id;
 	}
 }

@@ -8,10 +8,15 @@ import java.time.LocalDateTime;
 @Setter
 @ToString
 @EqualsAndHashCode(of = "name")
-@AllArgsConstructor
+//@AllArgsConstructor
 public class Genre {
 
     private String name;
 
     private LocalDateTime created;
+
+    public Genre(String name, LocalDateTime created) {
+        this.name = name;
+        this.created = created;
+    }
 }
